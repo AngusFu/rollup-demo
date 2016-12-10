@@ -1,2 +1,3 @@
-# rollup-demo
-rollup learning
+# rollup-kit
+
+rollup kit for js&css bundling.
