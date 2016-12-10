@@ -5,19 +5,13 @@ import resolve from 'rollup-plugin-node-resolve';
 import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-js';
 
-import css from 'rollup-plugin-css-only';
-
 export default {
   entry: 'src/index.js',
   dest: 'dist/bundle.js',
   format: 'iife',
-  moduleName: "wxEditor",
-  context: 'window',
+  context: 'this',
+  sourceMap: true,
   plugins: [
-    css({
-      output: './dist/bundle.css',
-      sourceMap: true
-    }),
     resolve({
       jsnext: true,
       main: true,
