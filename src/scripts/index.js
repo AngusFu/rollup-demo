@@ -1,3 +1,4 @@
+import '../styles/index.css'
 
 import { add, square } from './math';
 import { compose } from './compose';

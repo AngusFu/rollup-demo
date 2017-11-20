@@ -1,0 +1,2 @@
+!function(){"use strict";function n(){for(var n=[],r=arguments.length;r--;)n[r]=arguments[r];return n.reduce(function(n,r){return n+r},0)}function r(n){return n*n}var t=function(){for(var n=[],r=arguments.length;r--;)n[r]=arguments[r];var t=n;return function(){for(var n=this,r=[],o=arguments.length;o--;)r[o]=arguments[o];return t.forEach(function(t){r=[t.apply(n,r)]}),r[0]}}(n,r);console.log(196===t(9,5))}();
+//# sourceMappingURL=bundle.js.map
